@@ -1,0 +1,18 @@
+Sistema de Contas Nacionais Trimestrais - IBGE
+PIB a preços de mercado - Taxa acumulada em 4 trimestres (%), 1º trimestre 1996 - 1º trimestre 2021:
+https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9300-contas-nacionais-trimestrais.html?=&t=resultados&utm_source=landing&utm_medium=explica&utm_campaign=pib#evolucao-taxa
+tabela .xls
+
+Taxa de desocupação, por idade, 1º trimestre 2012 - 1º trimestre 2021?
+https://www.ibge.gov.br/estatisticas/sociais/trabalho/9171-pesquisa-nacional-por-amostra-de-domicilios-continua-mensal.html?edicao=20652&t=series-historicas
+tabela .xls
+
+Variação mensal durante o Plano Real (%), julho 1994 - maio 2021 - mensal
+https://www.ibge.gov.br/estatisticas/economicas/precos-e-custos/9256-indice-nacional-de-precos-ao-consumidor-amplo.html?=&t=series-historicas
+tabela .xls
+
+
+
+
+Todas as Pesquisas e EstudosIBGE
+https://www.ibge.gov.br/estatisticas/todos-os-produtos-estatisticas.html
