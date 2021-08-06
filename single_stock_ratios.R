@@ -1,6 +1,6 @@
 #### limpeza ####
-rm(list=ls()) ## limpa enviroment
-dev.off(dev.list()["RStudioGD"]) ## limpa plots
+# rm(list=ls()) ## limpa enviroment
+if(!is.null(dev.list())) dev.off() ## limpa plots
 gc() ## limpa memória do PC
 cat("\014") ## limpa console
 
@@ -24,7 +24,7 @@ stock_ret <- as.data.frame(monthlyReturn(CSNA3.SA))
 benchmark_ret <- as.data.frame(monthlyReturn(BVSP))
 
 ## calculating ratios
-juros <- as.data.frame(rbcb::get_series(c(IPCA = 433), last = 1, as = "xts"))[1,1]/100
+juros <- as.data.frame(rbcb::get_series(c(11), last = 1, as = "xts"))[1,1]
 
 sharpe <- function(mean, interest, stdev){
 (mean - interest) / stdev
@@ -44,15 +44,26 @@ stock_sharpe <- sharpe(stock_mean, juros, stock_stdev)
 benchmark_vec <- benchmark_ret[1:nrow(stock_ret),]
 covar <- cov(benchmark_vec, stock_ret$monthly.returns)
 
-Beta <- covar / benchmark_variance
+Beta <- (covar - benchmark_variance) / stock_sharpe
 Alpha <- (stock_mean - juros - Beta * (benchmark_mean - juros)) * 100
 
+#### limpeza ####
 gc() ## limpa memória do PC
 cat("\014") ## limpa console
+
 #### Results ####
 tickers[2:length(tickers)]
 benchmark_sharpe # average return in excess of risk-free rate
 stock_sharpe # average return in excess of risk-free rate
 Beta # volatility of a stock compared to the benchmark index
 Alpha # excess returns above benchmark
+
+
+# benchmark_sharpe
+# VALE_sharpe
+# VALE_Beta
+# VALE_Alpha
+# CSNA_sharpe
+# CSNA_Beta
+# CSNA_Alpha
 
