@@ -1,9 +1,9 @@
 {
     "id": "54ABE062",
-    "path": "C:/Users/user/Google Drive/2. Trading/Maluquisses_da_Na/single_stock_ratios.R",
+    "path": "C:/Users/user/Google_Drive/2.Trading/Na/single_stock_ratios.R",
     "project_path": "single_stock_ratios.R",
     "type": "r_source",
-    "hash": "3810252502",
+    "hash": "108059489",
     "contents": "",
     "dirty": false,
     "created": 1626919424398.0,
@@ -13,15 +13,15 @@
         "tempName": "Untitled2",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "11,0",
+        "cursorPosition": "1,0",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1628131667,
+    "lastKnownWriteTime": 1628210392,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1628133111952,
+    "last_content_update": 1628210392545,
     "read_only": false,
     "read_only_alternatives": []
 }
